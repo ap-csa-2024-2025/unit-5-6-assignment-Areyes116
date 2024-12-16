@@ -4,6 +4,25 @@ public class Main
 {
   public static void main(String[] args)
   {
+
+  public Dog(String iBreed, String iName, String iColor, double iWeight)
+  {
+    inDog.setBreed(breed);
+    inDog.setName(name);
+    inDog.setColor(color);
+    inDog.setWeight(weight);
+  }
+
+  public static void main(String[] args)
+  {
+    Dog d = new Dog("Pug", "Lucy", "tan", 30);
+    Dog myDog = new Dog();
+    
+    Dog dog1 = new Dog();
+    Dog dog2 = new Dog("Pug", "Lucy", "red", 5);
+
+    Dog dog3 = new Dog("Pug", "Lucy", "tan", 30, "female");
+  }
     // Uncomment and complete the code below to test your Plane class
     /* Delete this line to uncomment code **************************
     Scanner sc = new Scanner(System.in);
