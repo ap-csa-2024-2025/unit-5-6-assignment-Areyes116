@@ -1,62 +1,86 @@
 public class Dog
 {
-  private String breed;
-  private double weight;
-  private String name;
-  private String color;
-  private String gender;
+    private String breed;
+    private double weight;
+    private String name;
+    private String color;
+    private String gender;
 
-  public Dog()
-  {
-    breed = "pug";
-    name = "Lucy";
-    color = "tan";
-    weight = 30;
-    gender = "female";
-  }
-
-  public Dog(String iName, String iBreed, String iClolor, double Weight)
-  {
-    name = iName;
-    breed = iBreed;
-    color = iColor;
-    weight = iWeight;
-  }
-
-  // Make setters
-  public void setBreed(String iBreed)
-  {
-    breed = iBreed;
-  }
-
-  // Set gender
-  public void setGender(String iGender)
-  {
-    gender = iGender
-  }
-
-  // Make setters
-  public void setName(String iName)
-  {
-    name = iName;
-  }
-
-  // Set Weight
-  public void setWeight (doeuble iWeight)
-  {
-    if (iWeight < 0)
+    // Default Constructor
+    public Dog()
     {
-      weight = 0;
+        breed = "pug";
+        name = "Lucy";
+        color = "tan";
+        weight = 30;
+        gender = "female";
     }
-    else
-    {
-      weight = iWeight;
-    }
-  }
 
-  // Make getters
-  public String getBreed()
-  {
-    return breed;
-  }
+    // Parameterized Constructor
+    public Dog(String iName, String iBreed, String iColor, double iWeight)
+    {
+        name = iName;
+        breed = iBreed;
+        color = iColor;
+        weight = iWeight;
+    }
+
+    // Setters
+    public void setBreed(String iBreed)
+    {
+        breed = iBreed;
+    }
+
+    public void setGender(String iGender)
+    {
+        gender = iGender;
+    }
+
+    public void setName(String iName)
+    {
+        name = iName;
+    }
+
+    public void setWeight(double iWeight)
+    {
+        if (iWeight < 0)
+        {
+            weight = 0;
+        }
+        else
+        {
+            weight = iWeight;
+        }
+    }
+
+    public void setColor(String iColor)
+    {
+        color = iColor;
+    }
+
+    // Getters
+    public String getBreed()
+    {
+        return breed;
+    }
+
+    public String getGender()
+    {
+        return gender;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public double getWeight()
+    {
+        return weight;
+    }
+
+    public String getColor()
+    {
+        return color;
+    }
 }
