@@ -1,6 +1,4 @@
-public class Plane
-{
-  // Plane.java
+// Plane.java
 public class Plane
 {
     private int location; // Milestone 2: Declare the location variable
@@ -53,12 +51,11 @@ public class Plane
         StringBuilder sb = new StringBuilder();
         int spaces = (this.location + 2000) / 100; // Calculate the number of spaces
         for (int i = 0; i < spaces; i++) 
-
             sb.append(" ");
-        }
+    }
         sb.append("@");
         return sb.toString();
-    }
+}
 
     // Main method for testing
     public static void main(String[] args)
