@@ -76,6 +76,3 @@ public class Plane
         System.out.println(newPlane.toString());
         System.out.println("Location: " + newPlane.getLocation());
     }
-}
-
-}
